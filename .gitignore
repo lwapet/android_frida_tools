@@ -1,0 +1,10 @@
+/__handlers__
+/__pycache__
+/fridaserver-venv
+
+# IntelliJ files
+/.idea/
+
+*.iml
+
+
