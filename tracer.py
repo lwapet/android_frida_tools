@@ -16,7 +16,7 @@ file_loader = FileSystemLoader('templates')
 env = Environment(loader=file_loader)
 
 init_method_names = ['<clinit>', '<init>']
-
+method_hooks = list()
 
 def get_method_data(method_signature):
     """
@@ -229,9 +229,6 @@ def method_filter(class_name, method_name, method_list):
 def collect_finder_methods(message, data):
     if ('system_message' in message['payload']):
         message = json.loads(message['payload'])
-        if (message['system_message'] == 'script_finished'):
-            global is_script_finished
-            is_script_finished = True
     else:
         global method_hooks
         method_data = json.loads(message['payload'])
@@ -249,6 +246,7 @@ def message_function(message, data):
 
 
 def run():
+    global methods_hooks
     patterns = [
     {
         "class_name": "com.android.server.job*",
@@ -266,21 +264,24 @@ def run():
 ]
 
     # Launch app
-    package_name = 'super'
-    activity_name = 'super.superActivity'
-    launch_app_on_adb(package_name, activity_name)
+    # package_name = 'super'
+    # activity_name = 'super.superActivity'
+    # launch_app_on_adb(package_name, activity_name)
 
     # Wait before starting script injection. App will wait for script injection see https://www.frida.re/docs/gadget/
     time.sleep(2)
 
-    method_list = list()
-    open_conn_sig = "<java.net.URL: java.net.URLConnection openConnection()>"
-    method_list.append(open_conn_sig)
-    method_hooks = get_method_hooks(method_list, None, None)
-    # Generate trace script from method hooks
-    trace_script = generate_trace_script(method_hooks)
+    # method_list = list()
+    # open_conn_sig = "<java.net.URL: java.net.URLConnection openConnection()>"
+    # method_list.append(open_conn_sig)
 
-    current_session = connect(trace_script, collect_finder_methods) # connect to frida server on avd and inject script
+    # method_hooks = get_method_hooks(method_list, None, None)
+    # trace_script = generate_trace_script(method_hooks)
+    # Generate trace script from method hooks
+    finder_script = generate_finder_script(patterns)
+    finder_session = connect(finder_script, collect_finder_methods)
+    trace_script = generate_trace_script(method_hooks)
+    trace_session = connect(trace_script, message_function) # connect to frida server on avd and inject script
 
     # Read stdin
     sys.stdin.read()
