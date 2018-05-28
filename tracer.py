@@ -249,18 +249,18 @@ def run():
     global methods_hooks
     patterns = [
     {
-        "class_name": "com.android.server.job*",
-        "method_names": ["schedule"]
+        "class_name": "*",
+        "method_names": ["*"]
     },
-    {
-        "class_name": "android.app.JobSchedulerImpl",
-        "method_names": ["schedule"]
-    },
-    {
-
-        "class_name": "java.net.URL",
-        "method_names": ["openConnection"]
-    }
+    # {
+    #     "class_name": "android.app.JobSchedulerImpl",
+    #     "method_names": ["schedule"]
+    # },
+    # {
+    #
+    #     "class_name": "java.net.URL",
+    #     "method_names": ["openConnection"]
+    # }
 ]
 
     # Launch app
