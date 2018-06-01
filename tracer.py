@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import frida, os, json, sys
 import pprint
 import subprocess
@@ -250,7 +251,7 @@ def run():
     patterns = [
     {
         "class_name": "*",
-        "method_names": ["*"]
+        "method_names": ['*']
     },
     # {
     #     "class_name": "android.app.JobSchedulerImpl",
@@ -269,17 +270,35 @@ def run():
     # launch_app_on_adb(package_name, activity_name)
 
     # Wait before starting script injection. App will wait for script injection see https://www.frida.re/docs/gadget/
-    time.sleep(2)
+    # time.sleep(2)
 
     # method_list = list()
     # open_conn_sig = "<java.net.URL: java.net.URLConnection openConnection()>"
+    # sig = "<android.view.ViewManager: void addView(android.view.View,android.view.ViewGroup$LayoutParams)>"
+    # sig2 = "<android.app.Activity: void onCreate(android.os.Bundle)>"
+
+    # data = get_method_data(sig)
+    # data2 = get_method_data(sig2)
+    # hook = generate_method_hook(data)
+    # hook2 = generate_method_hook(data2)
+    # method_hooks.append(hook)
+    # method_hooks.append(hook2)
     # method_list.append(open_conn_sig)
 
     # method_hooks = get_method_hooks(method_list, None, None)
     # trace_script = generate_trace_script(method_hooks)
     # Generate trace script from method hooks
-    finder_script = generate_finder_script(patterns)
-    finder_session = connect(finder_script, collect_finder_methods)
+    app_methods = json.load(open('apks/locker-fe666e209e094968d3178ecf0cf817164c26d5501ed3cd9a80da786a4a3f3dc4_app_methods.json'))
+    method_hooks = list()
+    app_library_methods = json.load(open('apks/locker-fe666e209e094968d3178ecf0cf817164c26d5501ed3cd9a80da786a4a3f3dc4_library_methods.json'))
+    all_methods = app_methods + app_library_methods
+    for app_method in all_methods:
+        method_data = get_method_data(app_method)
+        if method_data:
+            hook = generate_method_hook(method_data)
+            method_hooks.append(hook)
+    # finder_script = generate_finder_script(patterns)
+    # finder_session = connect(finder_script, collect_finder_methods)
     trace_script = generate_trace_script(method_hooks)
     trace_session = connect(trace_script, message_function) # connect to frida server on avd and inject script
 
