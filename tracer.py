@@ -164,7 +164,9 @@ def get_method_hooks(method_signatures):
     return generated_method_hooks
 
 
-def connect(script, message_callback_function, app_name="Gadget"):
+def connect(script, message_callback_function,  app_name="Gadget"):
+#def connect(script, message_callback_function,  app_name="com.android.chrome"):
+
     """
     This function connects a frida client to a running frida server on a device.
     It also loads the given script and register a message callback function to receive messages from frida server
@@ -187,6 +189,9 @@ def connect(script, message_callback_function, app_name="Gadget"):
         loaded_script = session.create_script(script)  # create the frida script
         loaded_script.on('message', message_callback_function)  # register the callback function
         loaded_script.load()  # load the script in frida server
+        # added by Lavoisier
+        print("Calling the rpc callback")
+        loaded_script.exports.callhooksfunction();
     except Exception as e:
         print('[ERROR]: ' + str(e))
         sys.exit()

@@ -13,9 +13,26 @@ function decryptValue(valueToDecrypt, valueType) {
     return valueToDecrypt.toString();
   }
 }
+//*added by Lavoisier*//
+function callHooksFun() { //Defining the function that will be exported
+	Java.perform(function() {
+		  {% for  method_hook  in  method_hooks  %}
+		  {{ method_hook }}
+		  {% endfor %}
+		});
+}
 
-Java.perform(function() {
+
+
+rpc.exports = {
+	    callhooksfunction: callHooksFun //exporting callSecretFun as callsecretfunction
+	  // the name of the export (callsecretfunction) cannot have  neither Uppercase letter nor uderscores.
+};
+
+
+/*Java.perform(function() {
   {% for  method_hook  in  method_hooks  %}
   {{ method_hook }}
   {% endfor %}
 });
+*/
