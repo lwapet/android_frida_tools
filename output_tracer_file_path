@@ -1,0 +1,255 @@
+method_traced =  7763 , method_candidates =  7763
+Calling the rpc callback
+Error: currentToCanonicalPackageNames(): specified argument types do not match any of:
+	.overload('[Ljava.lang.String;')
+Error: canonicalToCurrentPackageNames(): specified argument types do not match any of:
+	.overload('[Ljava.lang.String;')
+Error: getPackagesHoldingPermissions(): specified argument types do not match any of:
+	.overload('[Ljava.lang.String;', 'int')
+Error: queryIntentActivityOptions(): specified argument types do not match any of:
+	.overload('android.content.ComponentName', '[Landroid.content.Intent;', 'android.content.Intent', 'int')
+Error: addPreferredActivity(): specified argument types do not match any of:
+	.overload('android.content.IntentFilter', 'int', '[Landroid.content.ComponentName;', 'android.content.ComponentName')
+Error: unmarshall(): specified argument types do not match any of:
+	.overload('[B', 'int', 'int')
+Error: writeByteArray(): specified argument types do not match any of:
+	.overload('[B')
+	.overload('[B', 'int', 'int')
+Error: writeByteArray(): specified argument types do not match any of:
+	.overload('[B')
+	.overload('[B', 'int', 'int')
+Error: writeArray(): specified argument types do not match any of:
+	.overload('[Ljava.lang.Object;')
+Error: writeBooleanArray(): specified argument types do not match any of:
+	.overload('[Z')
+Error: readBooleanArray(): specified argument types do not match any of:
+	.overload('[Z')
+Error: writeCharArray(): specified argument types do not match any of:
+	.overload('[C')
+Error: readCharArray(): specified argument types do not match any of:
+	.overload('[C')
+Error: writeIntArray(): specified argument types do not match any of:
+	.overload('[I')
+Error: readIntArray(): specified argument types do not match any of:
+	.overload('[I')
+Error: writeLongArray(): specified argument types do not match any of:
+	.overload('[J')
+Error: readLongArray(): specified argument types do not match any of:
+	.overload('[J')
+Error: writeFloatArray(): specified argument types do not match any of:
+	.overload('[F')
+Error: readFloatArray(): specified argument types do not match any of:
+	.overload('[F')
+Error: writeDoubleArray(): specified argument types do not match any of:
+	.overload('[D')
+Error: readDoubleArray(): specified argument types do not match any of:
+	.overload('[D')
+Error: writeStringArray(): specified argument types do not match any of:
+	.overload('[Ljava.lang.String;')
+Error: readStringArray(): specified argument types do not match any of:
+	.overload()
+	.overload('[Ljava.lang.String;')
+Error: writeBinderArray(): specified argument types do not match any of:
+	.overload('[Landroid.os.IBinder;')
+Error: readBinderArray(): specified argument types do not match any of:
+	.overload('[Landroid.os.IBinder;')
+Error: writeTypedArray(): specified argument types do not match any of:
+	.overload('[Landroid.os.Parcelable;', 'int')
+{'payload': '{"class_name":"android.os.Parcel","method_name":"obtain","args":[],"stack_trace":"java.lang.Exception\\n\\tat '
+            'android.os.Parcel.obtain(Native Method)\\n\\tat '
+            'android.app.IActivityManager$Stub$Proxy.getTasks(IActivityManager.java:4672)\\n\\tat '
+            'android.app.ActivityManager.getRunningTasks(ActivityManager.java:2127)\\n\\tat '
+            'tk.jianmo.study.killpoccessserve$100000000.handleMessage(Unknown '
+            'Source:19)\\n\\tat '
+            'android.os.Handler.dispatchMessage(Handler.java:102)\\n\\tat '
+            'android.os.Looper.loop(Looper.java:164)\\n\\tat '
+            'android.app.ActivityThread.main(ActivityThread.java:6494)\\n\\tat '
+            'java.lang.reflect.Method.invoke(Native Method)\\n\\tat '
+            'com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)\\n\\tat '
+            'com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)\\n"}',
+ 'type': 'send'}
+
+
+
+{'payload': '{"class_name":"android.os.Parcel","method_name":"obtain","args":[],"stack_trace":"java.lang.Exception\\n\\tat '
+            'android.os.Parcel.obtain(Native Method)\\n\\tat '
+            'android.app.IActivityManager$Stub$Proxy.getTasks(IActivityManager.java:4673)\\n\\tat '
+            'android.app.ActivityManager.getRunningTasks(ActivityManager.java:2127)\\n\\tat '
+            'tk.jianmo.study.killpoccessserve$100000000.handleMessage(Unknown '
+            'Source:19)\\n\\tat '
+            'android.os.Handler.dispatchMessage(Handler.java:102)\\n\\tat '
+            'android.os.Looper.loop(Looper.java:164)\\n\\tat '
+            'android.app.ActivityThread.main(ActivityThread.java:6494)\\n\\tat '
+            'java.lang.reflect.Method.invoke(Native Method)\\n\\tat '
+            'com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)\\n\\tat '
+            'com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)\\n"}',
+ 'type': 'send'}
+
+
+
+{'payload': '{"class_name":"android.os.Parcel","method_name":"writeInterfaceToken","args":["android.app.IActivityManager"],"return_value":null,"stack_trace":"java.lang.Exception\\n\\tat '
+            'android.os.Parcel.writeInterfaceToken(Native Method)\\n\\tat '
+            'android.app.IActivityManager$Stub$Proxy.getTasks(IActivityManager.java:4676)\\n\\tat '
+            'android.app.ActivityManager.getRunningTasks(ActivityManager.java:2127)\\n\\tat '
+            'tk.jianmo.study.killpoccessserve$100000000.handleMessage(Unknown '
+            'Source:19)\\n\\tat '
+            'android.os.Handler.dispatchMessage(Handler.java:102)\\n\\tat '
+            'android.os.Looper.loop(Looper.java:164)\\n\\tat '
+            'android.app.ActivityThread.main(ActivityThread.java:6494)\\n\\tat '
+            'java.lang.reflect.Method.invoke(Native Method)\\n\\tat '
+            'com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)\\n\\tat '
+            'com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)\\n"}',
+ 'type': 'send'}
+
+
+
+{'payload': '{"class_name":"android.os.Parcel","method_name":"writeInt","args":["1"],"return_value":null,"stack_trace":"java.lang.Exception\\n\\tat '
+            'android.os.Parcel.writeInt(Native Method)\\n\\tat '
+            'android.app.IActivityManager$Stub$Proxy.getTasks(IActivityManager.java:4677)\\n\\tat '
+            'android.app.ActivityManager.getRunningTasks(ActivityManager.java:2127)\\n\\tat '
+            'tk.jianmo.study.killpoccessserve$100000000.handleMessage(Unknown '
+            'Source:19)\\n\\tat '
+            'android.os.Handler.dispatchMessage(Handler.java:102)\\n\\tat '
+            'android.os.Looper.loop(Looper.java:164)\\n\\tat '
+            'android.app.ActivityThread.main(ActivityThread.java:6494)\\n\\tat '
+            'java.lang.reflect.Method.invoke(Native Method)\\n\\tat '
+            'com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)\\n\\tat '
+            'com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)\\n"}',
+ 'type': 'send'}
+
+
+
+Error: readByteArray(): specified argument types do not match any of:
+	.overload('[B')
+{'payload': '{"class_name":"android.os.Parcel","method_name":"writeInt","args":[null],"return_value":null,"stack_trace":"java.lang.Exception\\n\\tat '
+            'android.os.Parcel.writeInt(Native Method)\\n\\tat '
+            'android.app.IActivityManager$Stub$Proxy.getTasks(IActivityManager.java:4678)\\n\\tat '
+            'android.app.ActivityManager.getRunningTasks(ActivityManager.java:2127)\\n\\tat '
+            'tk.jianmo.study.killpoccessserve$100000000.handleMessage(Unknown '
+            'Source:19)\\n\\tat '
+            'android.os.Handler.dispatchMessage(Handler.java:102)\\n\\tat '
+            'android.os.Looper.loop(Looper.java:164)\\n\\tat '
+            'android.app.ActivityThread.main(ActivityThread.java:6494)\\n\\tat '
+            'java.lang.reflect.Method.invoke(Native Method)\\n\\tat '
+            'com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)\\n\\tat '
+            'com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)\\n"}',
+ 'type': 'send'}
+
+
+
+{'payload': '{"class_name":"android.os.Parcel","method_name":"readInt","args":[],"return_value":null,"stack_trace":"java.lang.Exception\\n\\tat '
+            'android.os.Parcel.readInt(Native Method)\\n\\tat '
+            'android.os.Parcel.readExceptionCode(Parcel.java:1968)\\n\\tat '
+            'android.os.Parcel.readException(Parcel.java:1947)\\n\\tat '
+            'android.os.Parcel.readException(Native Method)\\n\\tat '
+            'android.app.IActivityManager$Stub$Proxy.getTasks(IActivityManager.java:4680)\\n\\tat '
+            'android.app.ActivityManager.getRunningTasks(ActivityManager.java:2127)\\n\\tat '
+            'tk.jianmo.study.killpoccessserve$100000000.handleMessage(Unknown '
+            'Source:19)\\n\\tat '
+            'android.os.Handler.dispatchMessage(Handler.java:102)\\n\\tat '
+            'android.os.Looper.loop(Looper.java:164)\\n\\tat '
+            'android.app.ActivityThread.main(ActivityThread.java:6494)\\n\\tat '
+            'java.lang.reflect.Method.invoke(Native Method)\\n\\tat '
+            'com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)\\n\\tat '
+            'com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)\\n"}',
+ 'type': 'send'}
+
+
+
+{'payload': '{"class_name":"android.os.Parcel","method_name":"readException","args":[],"return_value":null,"stack_trace":"java.lang.Exception\\n\\tat '
+            'android.os.Parcel.readException(Native Method)\\n\\tat '
+            'android.app.IActivityManager$Stub$Proxy.getTasks(IActivityManager.java:4680)\\n\\tat '
+            'android.app.ActivityManager.getRunningTasks(ActivityManager.java:2127)\\n\\tat '
+            'tk.jianmo.study.killpoccessserve$100000000.handleMessage(Unknown '
+            'Source:19)\\n\\tat '
+            'android.os.Handler.dispatchMessage(Handler.java:102)\\n\\tat '
+            'android.os.Looper.loop(Looper.java:164)\\n\\tat '
+            'android.app.ActivityThread.main(ActivityThread.java:6494)\\n\\tat '
+            'java.lang.reflect.Method.invoke(Native Method)\\n\\tat '
+            'com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)\\n\\tat '
+            'com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)\\n"}',
+ 'type': 'send'}
+
+
+
+{'payload': '{"class_name":"android.os.Parcel","method_name":"readInt","args":[],"return_value":"1","stack_trace":"java.lang.Exception\\n\\tat '
+            'android.os.Parcel.readInt(Native Method)\\n\\tat '
+            'android.os.Parcel.createTypedArrayList(Parcel.java:2455)\\n\\tat '
+            'android.app.IActivityManager$Stub$Proxy.getTasks(IActivityManager.java:4681)\\n\\tat '
+            'android.app.ActivityManager.getRunningTasks(ActivityManager.java:2127)\\n\\tat '
+            'tk.jianmo.study.killpoccessserve$100000000.handleMessage(Unknown '
+            'Source:19)\\n\\tat '
+            'android.os.Handler.dispatchMessage(Handler.java:102)\\n\\tat '
+            'android.os.Looper.loop(Looper.java:164)\\n\\tat '
+            'android.app.ActivityThread.main(ActivityThread.java:6494)\\n\\tat '
+            'java.lang.reflect.Method.invoke(Native Method)\\n\\tat '
+            'com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)\\n\\tat '
+            'com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)\\n"}',
+ 'type': 'send'}
+
+
+
+{'payload': '{"class_name":"android.os.Parcel","method_name":"readInt","args":[],"return_value":"1","stack_trace":"java.lang.Exception\\n\\tat '
+            'android.os.Parcel.readInt(Native Method)\\n\\tat '
+            'android.os.Parcel.createTypedArrayList(Parcel.java:2461)\\n\\tat '
+            'android.app.IActivityManager$Stub$Proxy.getTasks(IActivityManager.java:4681)\\n\\tat '
+            'android.app.ActivityManager.getRunningTasks(ActivityManager.java:2127)\\n\\tat '
+            'tk.jianmo.study.killpoccessserve$100000000.handleMessage(Unknown '
+            'Source:19)\\n\\tat '
+            'android.os.Handler.dispatchMessage(Handler.java:102)\\n\\tat '
+            'android.os.Looper.loop(Looper.java:164)\\n\\tat '
+            'android.app.ActivityThread.main(ActivityThread.java:6494)\\n\\tat '
+            'java.lang.reflect.Method.invoke(Native Method)\\n\\tat '
+            'com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)\\n\\tat '
+            'com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)\\n"}',
+ 'type': 'send'}
+
+
+
+{'payload': '{"class_name":"android.os.Parcel","method_name":"readInt","args":[],"return_value":"63","stack_trace":"java.lang.Exception\\n\\tat '
+            'android.os.Parcel.readInt(Native Method)\\n\\tat '
+            'android.app.ActivityManager$RunningTaskInfo.readFromParcel(ActivityManager.java:1954)\\n\\tat '
+            'android.app.ActivityManager$RunningTaskInfo.<init>(ActivityManager.java:1980)\\n\\tat '
+            'android.app.ActivityManager$RunningTaskInfo.<init>(Unknown '
+            'Source:0)\\n\\tat '
+            'android.app.ActivityManager$RunningTaskInfo$1.createFromParcel(ActivityManager.java:1972)\\n\\tat '
+            'android.app.ActivityManager$RunningTaskInfo$1.createFromParcel(ActivityManager.java:1971)\\n\\tat '
+            'android.os.Parcel.createTypedArrayList(Parcel.java:2462)\\n\\tat '
+            'android.app.IActivityManager$Stub$Proxy.getTasks(IActivityManager.java:4681)\\n\\tat '
+            'android.app.ActivityManager.getRunningTasks(ActivityManager.java:2127)\\n\\tat '
+            'tk.jianmo.study.killpoccessserve$100000000.handleMessage(Unknown '
+            'Source:19)\\n\\tat '
+            'android.os.Handler.dispatchMessage(Handler.java:102)\\n\\tat '
+            'android.os.Looper.loop(Looper.java:164)\\n\\tat '
+            'android.app.ActivityThread.main(ActivityThread.java:6494)\\n\\tat '
+            'java.lang.reflect.Method.invoke(Native Method)\\n\\tat '
+            'com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)\\n\\tat '
+            'com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)\\n"}',
+ 'type': 'send'}
+
+
+
+{'payload': '{"class_name":"android.os.Parcel","method_name":"readInt","args":[],"return_value":"1","stack_trace":"java.lang.Exception\\n\\tat '
+            'android.os.Parcel.readInt(Native Method)\\n\\tat '
+            'android.app.ActivityManager$RunningTaskInfo.readFromParcel(ActivityManager.java:1955)\\n\\tat '
+            'android.app.ActivityManager$RunningTaskInfo.<init>(ActivityManager.java:1980)\\n\\tat '
+            'android.app.ActivityManager$RunningTaskInfo.<init>(Unknown '
+            'Source:0)\\n\\tat '
+            'android.app.ActivityManager$RunningTaskInfo$1.createFromParcel(ActivityManager.java:1972)\\n\\tat '
+            'android.app.ActivityManager$RunningTaskInfo$1.createFromParcel(ActivityManager.java:1971)\\n\\tat '
+            'android.os.Parcel.createTypedArrayList(Parcel.java:2462)\\n\\tat '
+            'android.app.IActivityManager$Stub$Proxy.getTasks(IActivityManager.java:4681)\\n\\tat '
+            'android.app.ActivityManager.getRunningTasks(ActivityManager.java:2127)\\n\\tat '
+            'tk.jianmo.study.killpoccessserve$100000000.handleMessage(Unknown '
+            'Source:19)\\n\\tat '
+            'android.os.Handler.dispatchMessage(Handler.java:102)\\n\\tat '
+            'android.os.Looper.loop(Looper.java:164)\\n\\tat '
+            'android.app.ActivityThread.main(ActivityThread.java:6494)\\n\\tat '
+            'java.lang.reflect.Method.invoke(Native Method)\\n\\tat '
+            'com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)\\n\\tat '
+            'com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)\\n"}',
+ 'type': 'send'}
+
+
+
+[ERROR]: script is destroyed

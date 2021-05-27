@@ -9,7 +9,7 @@ try {
     var return_value = this.{{ method_name }}.overload({{ parameters|join(', ') }}).call({{ this }}{{arguments|join(', ') }});
     var decryptedReturnValue = decryptValue(return_value, "{{ return_value }}");
 
-    var args = [{{ arguments|join(', ') }}];
+    var args = [{{ arguments|j(', ')oin }}];
     var decryptedArgs = [];
     args.forEach(function(arg, i) {
       var parameters = [{{ parameters|join(', ') }}];
